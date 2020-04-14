@@ -64,6 +64,7 @@ public class QLSanPhamUI extends JFrame {
 
 	public QLSanPhamUI(String title) {
 		this.setTitle(title);
+		
 		addControls();
 		addEvents();
 		ketNoiDuLieu();
@@ -341,6 +342,7 @@ public class QLSanPhamUI extends JFrame {
 				int row= tblSanPham.getSelectedRow();
 				if(row==-1)return;
 				else {
+					// hiển thị lên bảng
 					txtMaSP.setText(tblSanPham.getValueAt(row, 0).toString());
 					txtTenSP.setText(tblSanPham.getValueAt(row, 1).toString());
 					txtGiaSP.setText(tblSanPham.getValueAt(row, 2).toString());
